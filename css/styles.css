@@ -59,14 +59,14 @@
 /* display bigger image on bigger screens */
 @media only screen and (min-width: 480px) {
     .proj-1-hero {
-        background-image: url('assets/test.jpg');
+        background-image: url('/project-4.1/assets/test.jpg');
     }
 }
 
 /* display smaller image on smaller screen */
 @media only screen and (max-width: 480px) {
     .proj-1-hero {
-        background-image: url('assets/test-2.jpg');
+        background-image: url('/project-4.1/assets/test-2.jpg');
     }
 }
 
