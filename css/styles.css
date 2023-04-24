@@ -1,0 +1,246 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    border: 1px solid black;
+}
+  
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+    /* change all columns to stacked layout on small screens */
+    [class*="col-"] {
+      width: 100%;
+    }
+    
+    /* hide desktop nav on small screens */
+    header nav {
+        display: none;
+    }
+
+    /* show menu icon and mobile menu on small screens */
+    header #menu-icon {
+        display: block;
+    }
+
+    /* hide the sidebar on small screens */
+    div.sidebar {
+        display: none;
+    }
+
+    /* hide the empty sidebar space on the right on small screens */
+    div.sidebar-bal {
+        display: none;
+    }
+}
+
+/* display bigger image on bigger screens */
+@media only screen and (min-width: 480px) {
+    .proj-1-hero {
+        background-image: url('/assets/test.jpg');
+    }
+}
+
+/* display smaller image on smaller screen */
+@media only screen and (max-width: 480px) {
+    .proj-1-hero {
+        background-image: url('/assets/test-2.jpg');
+    }
+}
+
+/* using minor third type scale */
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+#nav-wrapper {
+    position: fixed;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 48px; /* subtracted 16px from sides because of padding of a elements*/
+    background-color: #ffffff;
+    border: 1px solid black;
+}
+
+header a {
+    text-decoration: none;
+}
+
+#alina {
+    display: flex;
+    align-items: center;
+}
+
+#alina a {
+    padding: 16px;
+    color: black;
+}
+
+header ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header ul li {
+    padding: 16px;
+}
+
+header ul li a {
+    color: #000000; 
+}
+
+#menu-icon {
+    margin: auto 0px;
+    display: none;
+    cursor: pointer;
+}
+
+.open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: fixed;
+}
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 82.5px;
+    left: 0px;
+    height: calc(100dvh - 82.5px);
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.hero {
+    height: 100dvh;
+    max-width: 100%;
+    padding: 88.5px 64px 8px 64px; /* top padding has 80.5 added to 8 so the text doesn't get covered by the nav bar */
+    margin: 0px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.proj-cover {
+    height: 100dvh;
+    max-width: 100%;
+    padding: 44px 64px; /* subtracted 20px from top because of 20px top margin on headers */
+    margin: 0px;
+    overflow: hidden;
+    
+}
+
+
+/* get the height of the image to fit within div */
+.proj-cover img {
+    max-height: 50%;
+    max-width: 100%;
+    display: block;
+    margin: 32px auto;
+
+}
+
+.sidebar {
+    position: sticky;
+    top: 82.5px; /* this sets the height on the page where it needs to stick, matches the height of the nav so it starts right after */
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li {
+    padding: 8px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.main-content {
+    padding:64px 64px;
+}
+
+.main-content img {
+    max-width: 100%;
+    margin: 32px 0px;
+}
+
+.section-header {
+    text-align: center;
+}
+
+/*.other-project {
+    height: 60dvh;
+    padding: 44px 64px; /* 20px subtracted from top because of 20px margin on headers
+}*/
+
+.footer {
+    max-width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px 48px 0px 48px; /* 16px subtracted from sides because of padding on list items */
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.footer ul li {
+    float: left;
+}
+
+.footer ul li a {
+    display: block;
+    padding: 16px;
+    color:#000000;
+    text-decoration: none;
+}

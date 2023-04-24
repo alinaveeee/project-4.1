@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alina Verduzco</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--link for test menu icon, update this later-->
+</head>
+
+<body>    
+    <!--nav bar-->
+    <div id="nav-wrapper">
+    <header>
+        <div id="alina"><a href="/">Alina Verduzco</a></div>
+        <nav>
+            <ul>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#">Resume</a></li><!--needs to link to a pdf-->
+                <li><a href="/about.html">About Me</a></li>
+            </ul>
+        </nav>
+
+        <div id="menu-icon" onclick="toggleMobileMenu(this)"><!--remember to add script on all pages-->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i>
+            <ul class="mobile-menu">
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#">Resume</a></li><!--needs to link to a pdf-->
+                <li><a href="/about.html">About Me</a></li>
+            </ul>
+        </div>
+    </header>
+    </div>
+    
+    <!--hero section-->
+    <div class="row">
+        <div class="col-12 hero">
+            <h1>text</h1>
+        </div>
+    </div>
+    
+    <!--project section, use the id to jump to projects from the nav-->
+    <div id="projects">
+
+        <!--first project, entire div needs to link to the project page-->
+        <div class="row">
+            <div class="col-12 proj-cover" onclick="location.href='/project-1.html';" style="cursor:pointer;">
+                <h2>Project 1</h2>
+                    <img src="/assets/test.jpg" alt="image description">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt ut nulla sed feugiat. Sed eget nulla ut purus facilisis laoreet quis porttitor sem. Nunc bibendum ac nisl sed maximus. Sed eu quam sodales, porttitor quam pretium, rutrum risus. Nullam et quam in sem hendrerit faucibus.</p>
+            </div>
+        </div>
+    
+        <div class="row">
+            <!--second project, entire div needs to link to the project page-->
+            <div class="col-6 proj-cover" onclick="location.href='#';" style="cursor:pointer;">
+                <h2>Project 2</h2>
+                <img src="/assets/test.jpg" alt="image description">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt ut nulla sed feugiat. Sed eget nulla ut purus facilisis laoreet quis porttitor sem. Nunc bibendum ac nisl sed maximus. Sed eu quam sodales, porttitor quam pretium, rutrum risus. Nullam et quam in sem hendrerit faucibus.</p>
+            </div>
+    
+            <!--third project, entire div needs to link to the project page-->
+            <div class="col-6 proj-cover" onclick="location.href='#';" style="cursor:pointer;">
+                <h2>Project 3</h2>
+                <img src="/assets/test.jpg" alt="image description">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt ut nulla sed feugiat. Sed eget nulla ut purus facilisis laoreet quis porttitor sem. Nunc bibendum ac nisl sed maximus. Sed eu quam sodales, porttitor quam pretium, rutrum risus. Nullam et quam in sem hendrerit faucibus.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!--footer-->
+    <div class="footer">
+        <!--site map section-->
+        <div class="row">
+            <div class="col-4">
+                <ul>
+                    <li><a href="/index.html#projects">Projects</a></li>
+                </ul>
+            </div>
+
+            <div class="col-4">
+                <ul>
+                    <li><a href="#">Resume</a></li><!--needs to link to a pdf-->
+                </ul>
+            </div>
+
+            <div class="col-4">
+                <ul>
+                    <li><a href="/about.html">About Me</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!--social media section-->
+        <div class="row">
+            <div class="col-12">
+                <ul>
+                    <li><a href="https://www.behance.com" target="_blank" rel="noopener noreferrer">Behance</a></li><!--update with profile link-->
+                    <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li><!--update with profile link-->
+                </ul>
+            </div>
+        </div>
+
+        <!--privacy policy section-->
+        <div class="row">
+            <div class="col-12">
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <!--javascript for mobile menu-->
+    <script>
+        function toggleMobileMenu(menu) {
+            menu.classList.toggle('open')
+        }
+    </script>
+
+</body>
+
+</html>

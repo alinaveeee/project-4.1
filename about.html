@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--link for test menu icon, update this later-->
+</head>
+
+<body>
+    <!--nav bar-->
+    <div id="nav-wrapper">
+        <header>
+            <div id="alina"><a href="/">Alina Verduzco</a></div>
+            <nav>
+                <ul>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#">Resume</a></li><!--needs to link to a pdf-->
+                    <li><a href="/about.html">About Me</a></li>
+                </ul>
+            </nav>
+    
+            <div id="menu-icon" onclick="toggleMobileMenu(this)"><!--remember to add script on all pages-->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i>
+                <ul class="mobile-menu">
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#">Resume</a></li><!--needs to link to a pdf-->
+                    <li><a href="/about.html">About Me</a></li>
+                </ul>
+            </div>
+        </header>
+        </div>
+
+    <!--space to push main content below the nav-->
+    <div style="height:82.5px;"></div>
+
+    <!--main content section-->
+    <div class="row">
+        <!--margin spacing matching project page layout-->
+        <div class="col-2 sidebar-bal">
+        </div>
+
+        <!--scrollable main content-->
+        <div class="col-8 main-content">
+            <h1>About Me</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt ut nulla sed feugiat. Sed eget nulla ut purus facilisis laoreet quis porttitor sem. Nunc bibendum ac nisl sed maximus. Sed eu quam sodales, porttitor quam pretium, rutrum risus. Nullam et quam in sem hendrerit faucibus. Nullam egestas sem in lectus sodales ullamcorper. Nulla eu felis neque. In eleifend faucibus sem eu vestibulum. Phasellus urna urna, imperdiet ut tortor eu, mollis tempor mi. Maecenas venenatis velit feugiat tortor facilisis, et aliquam massa rhoncus.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt ut nulla sed feugiat. Sed eget nulla ut purus facilisis laoreet quis porttitor sem. Nunc bibendum ac nisl sed maximus. Sed eu quam sodales, porttitor quam pretium, rutrum risus. Nullam et quam in sem hendrerit faucibus. Nullam egestas sem in lectus sodales ullamcorper. Nulla eu felis neque. In eleifend faucibus sem eu vestibulum. Phasellus urna urna, imperdiet ut tortor eu, mollis tempor mi. Maecenas venenatis velit feugiat tortor facilisis, et aliquam massa rhoncus.</p>
+        </div>
+
+        <!--margin spacing matching project page layout-->
+        <div class="col-2 sidebar-bal">
+        </div>
+    </div>
+
+    <!--insert footer here-->
+
+    <!--javascript for mobile menu-->
+    <script>
+        function toggleMobileMenu(menu) {
+            menu.classList.toggle('open')
+        }
+    </script>
+    
+</body>
+
+</html>
